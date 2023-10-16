@@ -8,37 +8,58 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            
         </Grid.RowDefinitions>
+       
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Name="textBlockCalc" Background="#FFCBF7F7" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontFamily="Times New Roman" FontSize="36"/>
-        <Button Grid.Row="1" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">1</Button>
-        <Button Grid.Row="1" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">2</Button>
-        <Button Grid.Row="1" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">3</Button>
-        <Button Grid.Row="1" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">+</Button> 
+ <Grid Grid.Row="0" Grid.ColumnSpan="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Background="#FF0BC888">
+                <TextBlock Name="textBlockCalcEquation" Background="#FF96E9F3" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontFamily="Times New Roman" FontSize="36"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.ColumnSpan="4" Background="#FF0BC888">
+                <TextBlock Name="textBlockCalc" Background="#FFCBF7F7" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" FontFamily="Times New Roman" FontSize="36"/>
+            </Grid>
+        </Grid>
+        
+        
+        <Button Grid.Row="1" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF" Content="CE"></Button>
+        <Button Grid.Row="1" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">C </Button>
+        <Button Grid.Row="1" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF" Content=">"></Button>
+        <Button Grid.Row="1" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">/</Button>
 
-        <Button Grid.Row="2" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">4</Button>
-        <Button Grid.Row="2" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">5</Button>
-        <Button Grid.Row="2" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">6</Button>
-        <Button Grid.Row="2" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">-</Button>
+        <Button Grid.Row="2" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">1</Button>
+        <Button Grid.Row="2" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">2</Button>
+        <Button Grid.Row="2" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">3</Button>
+        <Button Grid.Row="2" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">+</Button> 
 
-        <Button Grid.Row="3" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">7</Button>
-        <Button Grid.Row="3" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">8</Button>
-        <Button Grid.Row="3" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">9</Button>
-        <Button Grid.Row="3" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">*</Button>
+        <Button Grid.Row="3" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">4</Button>
+        <Button Grid.Row="3" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">5</Button>
+        <Button Grid.Row="3" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">6</Button>
+        <Button Grid.Row="3" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">-</Button>
 
-        <Button Grid.Row="4" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">=</Button>
-        <Button Grid.Row="4" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">0</Button>
-        <Button Grid.Row="4" Grid.Column="2" FontFamily="Times New Roman" FontSize="36"  Background="#FFE5D6EF">C</Button>
-        <Button Grid.Row="4" Grid.Column="3" FontFamily="Times New Roman" FontSize="36"  Background="#FFE5D6EF">/</Button>
+        <Button Grid.Row="4" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">7</Button>
+        <Button Grid.Row="4" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">8</Button>
+        <Button Grid.Row="4" Grid.Column="2" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">9</Button>
+        <Button Grid.Row="4" Grid.Column="3" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">*</Button>
+
+        <Button Grid.Row="5" Grid.Column="0" FontFamily="Times New Roman" FontSize="36" Background="#FFE5D6EF">.</Button>
+        <Button Grid.Row="5" Grid.Column="1" FontFamily="Times New Roman" FontSize="36" Background="#FFE8ECF9">0</Button>
+        <Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" FontFamily="Times New Roman" FontSize="36"  Background="#FFE5D6EF">=</Button>
+        
     </Grid>
 </Window>
